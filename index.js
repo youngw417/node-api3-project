@@ -1,8 +1,8 @@
 // code away!
 const server = require('./server');
 
-const port = 8002;
+const PORT = process.env.PORT || 8002;
 
-server.listen(port, () =>
-  console.log(`\n**** The Server is running on port ${port} ***\n`)
+server.listen(PORT, () =>
+  console.log(`\n**** The Server is running on port ${PORT} ***\n`)
 );
